@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #fbfbfb;
+}
+
+header {
+  background-color: #fff;
+  padding: 24px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.NavBar {
+  display: flex;
+  gap: 24px;
+}
+
+.NavButton {
+  border: none;
+  background: none;
+  font-size: 28px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.AboutMe {
+  display: flex;
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true") no-repeat center/cover;
+  color: #0027d5;
+  height: 834px;
+}
+
+.AboutBlogPic {
+  width: 50%;
+}
+.AboutBlogPic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.AboutBlog {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 12px;
+}
+
+.BlogTitle {
+  color: #0027d5;
+  gap: 12px;
+  height: 234px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  margin-left: 10%;
+  line-height: 150%;
+}
+.BlogTitle h1 {
+  font-size: 120px;
+  font-weight: 900;
+}
+.AboutTitle h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.TopArticle {
+  display: flex;
+  height: 640px;
+}
+
+.TopPhoto {
+  width: 50%;
+  overflow: hidden;
+}
+.TopPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.TopContent {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.NewsestArticle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.photo {
+  width: 100%;
+  height: 224px;
+  overflow: hidden;
+  margin: 4px 0px;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  line-height: 150%;
+}
+.date {
+  font-size: 16px;
+  margin: 4px 0px;
+}
+.Tag {
+  font-size: 24px;
+  color: #0027d5;
+  margin: px 0;
+}
+.Popular {
+  color: #fff;
+  background-color: #0027d5;
+  border: none;
+  border-radius: 40px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 4px 0px;
+}
+
+.Context {
+  font-size: 16px;
+  margin: 4px 0px;
+  color: #4b4b4b;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ReadMore {
+  align-self: flex-start;
+  border: 1px solid #000;
+  background-color: #fbfbfb;
+  color: #4b4b4b;
+  border-radius: 40px;
+  font-size: 16px;
+  padding: 8px 16px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.SearchBar {
+  display: flex;
+  justify-content: center;
+  margin: 48px 0;
+}
+.SearchBar input {
+  width: 50%;
+  max-width: 600px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.Articlecontainer {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: center;*/
+  gap: 24px;
+  padding: 40px 312px;
+}
+
+.Card {
+  width: 416px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Footer {
+  text-align: center;
+  padding: 32px;
+  font-size: 14px;
+}
+
+.PageTurner{
+  width: 100%;
+  align-items: center;
+}
+
+.ShowPages{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.Page{
+  border: none;
+  color: #4b4b4b;
+  background-color: #fbfbfb;
+  cursor: pointer;
+  font-size: 16px;
+  gap: 10px;
+}
+.CurrentPage{
+  border: none;
+  color: #0027d5;
+  background-color: #fbfbfb;
+  cursor: default;
+  font-size: 16px;
+  gap: 10px;
+}
+
+.ContactMe{
+  width: 100%;
+  height: 208px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 312px;
+  gap: 24px;
+}
+.Social{
+  display: flex;
+  gap: 4px;
+}
+
+@media (max-width: 375px) {
+  .Card {
+    width: calc(50% - 24px);
+  }
+}
